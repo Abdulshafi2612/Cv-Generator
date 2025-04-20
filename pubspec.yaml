@@ -1,0 +1,41 @@
+name: cv_maker
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  connectivity_plus: ^6.1.3
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_pdfview: ^1.4.0+1
+  flutter_tex: ^4.1.3
+  font_awesome_flutter: ^10.8.0
+  google_fonts: ^6.2.1
+  http: ^1.3.0
+  open_file: ^3.5.10
+  path_provider: ^2.1.5
+  pdf: ^3.11.3
+  permission_handler: ^11.0.0
+  syncfusion_flutter_pdfviewer: ^29.1.38
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
