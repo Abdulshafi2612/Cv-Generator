@@ -1,7 +1,6 @@
 import 'package:cv_maker/screens/contact_info.dart';
 import 'package:cv_maker/screens/temp_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
 
 void main() {
   runApp(const MyApp());

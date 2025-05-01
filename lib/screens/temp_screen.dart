@@ -13,13 +13,10 @@ class _TempScreenState extends State<TempScreen> {
   void initState() {
     super.initState();
 
-    // بعد 3 ثواني ينقل لـ ContactInfo
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (context) =>  ContactInfo(),
-        ),
-      );
+      Navigator.of(
+        context,
+      ).pushReplacement(MaterialPageRoute(builder: (context) => ContactInfo()));
     });
   }
 
@@ -36,12 +33,10 @@ class _TempScreenState extends State<TempScreen> {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/cover.png'),
-                  fit: BoxFit.contain,
+                  fit: BoxFit.cover,
                 ),
               ),
-              child: Container(
-                color: Colors.white.withOpacity(0.0),
-              ),
+              child: Container(color: Colors.white.withOpacity(0.0)),
             ),
           ),
         ),
